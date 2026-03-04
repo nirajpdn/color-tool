@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { Toaster } from "@/components/ui/sonner";
 import "vue-sonner/style.css";
+import Navbar from "@/components/navbar.vue";
+import Footer from "@/components/footer.vue";
 useHead({
   meta: [
     { charset: "utf-8" },
@@ -33,7 +35,9 @@ useSeoMeta({
   <Body class="overscroll-none antialiased bg-background text-foreground">
     <div id="app" vaul-drawer-wrapper class="relative">
       <NuxtLayout>
+        <Navbar />
         <NuxtPage />
+        <Footer />
       </NuxtLayout>
       <Toaster :duration="3000" position="bottom-right" />
     </div>
