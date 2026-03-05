@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/eslint", "shadcn-nuxt"],
+  modules: ["@nuxt/eslint", "shadcn-nuxt", "nuxt-shiki"],
   components: [
     {
       path: "~/components",
@@ -35,5 +35,10 @@ export default defineNuxtConfig({
      * @default "~/components/ui"
      */
     componentDir: "~/components/ui",
+  },
+  shiki: {
+    defaultTheme: "github-light",
+    bundledLangs: ["css", "scss", "less", "js", "ts", "jsx", "json"],
+    dynamic: true,
   },
 });
