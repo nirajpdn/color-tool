@@ -7,6 +7,7 @@ ColorTool is a Nuxt 4 app for quick color workflows:
 - Gradient generation
 - Avatar generation
 - WCAG contrast checking
+- Extract color palette from image
 
 ## Run locally
 
